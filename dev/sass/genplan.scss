@@ -1,0 +1,45 @@
+path.build-item,
+path.build-float {
+  fill: #4c3fa0;
+  fill-opacity: 0;
+  stroke: #7000FF;
+  stroke-opacity: 0;
+  stroke-width: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+path.build-item:hover,
+path.build-float:hover {
+  fill-opacity: 0.3;
+  stroke-opacity: 1;
+}
+path.build-item.sold,
+path.build-float.sold {
+  fill: #e93111;
+  fill-opacity: 0.3;
+  stroke: #e93111;
+  stroke-opacity: 1;
+  cursor: no-drop;
+}
+
+.info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.info h2 {
+  margin-bottom: 5px;
+}
+.info .info-build {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+.info .info-build .info-item {
+  text-align: center;
+}
+.info .info-build .info-item i {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}

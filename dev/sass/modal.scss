@@ -1,0 +1,72 @@
+.modal-wrapper,
+.modal-room {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+.modal-wrapper .modal-container,
+.modal-room .modal-container {
+  width: 600px;
+  min-height: 400px;
+  border: 1px solid #9e9898;
+  background-color: #252525;
+  border-radius: 12px;
+  padding: 30px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+.modal-wrapper .closed,
+.modal-room .closed {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal-wrapper.show,
+.modal-room.show {
+  display: flex;
+}
+.modal-wrapper .modal-title,
+.modal-room .modal-title {
+  text-transform: uppercase;
+}
+.modal-wrapper .modal-img,
+.modal-room .modal-img {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-wrapper .modal-img img,
+.modal-room .modal-img img {
+  width: 100%;
+}
+.modal-wrapper form .input-row,
+.modal-room form .input-row {
+  display: flex;
+  flex-direction: column;
+}
+.modal-wrapper form .input-row label,
+.modal-room form .input-row label {
+  margin-bottom: 10px;
+}
+.modal-wrapper form .input-row input,
+.modal-room form .input-row input {
+  align-self: start;
+  padding: 5px 20px;
+  color: #A9A5A5;
+}
+.modal-wrapper form .input-row input:not(:last-child),
+.modal-room form .input-row input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.modal-room .modal-container {
+  flex-direction: row;
+  align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
